@@ -22,7 +22,8 @@ func TestReconstructQueue(t *testing.T) {
 		[2]int{4, 4},
 		[2]int{7, 1},
 	}
-	if !reflect.DeepEqual(reconstructQueue(input), output) {
-		t.Errorf("left: %v right: %v\n", reconstructQueue(input), output)
+	result := reconstructQueue(input)
+	if !reflect.DeepEqual(result, output) {
+		t.Errorf("left: %v right: %v\n", result, output)
 	}
 }
